@@ -14,6 +14,10 @@
 		798924F627A7FBDB006417F8 /* WeatherAppGoodVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798924F527A7FBDB006417F8 /* WeatherAppGoodVersionTests.swift */; };
 		7989250027A7FBDB006417F8 /* WeatherAppGoodVersionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798924FF27A7FBDB006417F8 /* WeatherAppGoodVersionUITests.swift */; };
 		7989250227A7FBDB006417F8 /* WeatherAppGoodVersionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989250127A7FBDB006417F8 /* WeatherAppGoodVersionUITestsLaunchTests.swift */; };
+		7989251027A80053006417F8 /* WeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989250F27A80053006417F8 /* WeatherApi.swift */; };
+		7989251327A805A3006417F8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989251227A805A3006417F8 /* Weather.swift */; };
+		7989251527A808BF006417F8 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989251427A808BE006417F8 /* CurrentWeather.swift */; };
+		7989251727A80E15006417F8 /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989251627A80E15006417F8 /* CurrentWeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		798924FB27A7FBDB006417F8 /* WeatherAppGoodVersionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppGoodVersionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		798924FF27A7FBDB006417F8 /* WeatherAppGoodVersionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppGoodVersionUITests.swift; sourceTree = "<group>"; };
 		7989250127A7FBDB006417F8 /* WeatherAppGoodVersionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppGoodVersionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7989250F27A80053006417F8 /* WeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApi.swift; sourceTree = "<group>"; };
+		7989251227A805A3006417F8 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		7989251427A808BE006417F8 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		7989251627A80E15006417F8 /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 		798924E327A7FBD9006417F8 /* WeatherAppGoodVersion */ = {
 			isa = PBXGroup;
 			children = (
+				7989251627A80E15006417F8 /* CurrentWeatherView.swift */,
+				7989251427A808BE006417F8 /* CurrentWeather.swift */,
+				7989251127A8057F006417F8 /* Model */,
+				7989250E27A8002C006417F8 /* Service */,
 				798924E427A7FBD9006417F8 /* WeatherAppGoodVersionApp.swift */,
 				798924E627A7FBD9006417F8 /* ContentView.swift */,
 				798924E827A7FBDB006417F8 /* Assets.xcassets */,
@@ -125,6 +137,22 @@
 				7989250127A7FBDB006417F8 /* WeatherAppGoodVersionUITestsLaunchTests.swift */,
 			);
 			path = WeatherAppGoodVersionUITests;
+			sourceTree = "<group>";
+		};
+		7989250E27A8002C006417F8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7989250F27A80053006417F8 /* WeatherApi.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7989251127A8057F006417F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7989251227A805A3006417F8 /* Weather.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7989251327A805A3006417F8 /* Weather.swift in Sources */,
+				7989251527A808BF006417F8 /* CurrentWeather.swift in Sources */,
 				798924E727A7FBD9006417F8 /* ContentView.swift in Sources */,
+				7989251727A80E15006417F8 /* CurrentWeatherView.swift in Sources */,
 				798924E527A7FBD9006417F8 /* WeatherAppGoodVersionApp.swift in Sources */,
+				7989251027A80053006417F8 /* WeatherApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
